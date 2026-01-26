@@ -3,8 +3,10 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import { Products as pd } from "../../data/Products";
+import { useNavigate } from "react-router-dom";
 
 export default function Featuredproducts() {
+    const navigate = useNavigate()
     return (
         <div>
             <h2 className="my-8 text-3xl md:text-4xl font-extrabold tracking-tight">Featured Products</h2>
@@ -31,7 +33,7 @@ export default function Featuredproducts() {
                                 },
                             }}
                         >
-                            <CardActionArea className="flex-1">
+                            <CardActionArea className="flex-1" onClick={() => navigate(`/product/${item.slug}`)}>
                                 <div className="h-48 w-full overflow-hidden">
                                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                                 </div>
@@ -42,14 +44,13 @@ export default function Featuredproducts() {
                                         className="font-medium"
                                         sx={{ color: "#E6EDF3", fontWeight: "Bold" }}
                                     >
-                                        {item.name}
+                                    {item.name}
                                     </Typography>
                                     <Typography
                                         variant="subtitle1"
-                                        className="font-medium"
-                                        sx={{ color: "#E6EDF3", fontWeight: 500 }}
+                                        sx={{ color: "#E6EDF3",fontSize:"12px" }}
                                     >
-                                        ₹{item.price}
+                                       Starting from  ₹{item.price}
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
