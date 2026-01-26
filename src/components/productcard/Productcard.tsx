@@ -3,12 +3,16 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import type { Product } from "../../data/Products";
+import { useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
     products: Product[];
 }
 
 export default function Productcard({ products }: ProductCardProps) {
+
+    const navigate = useNavigate()
+
     return (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {products.map((item) => (
@@ -32,7 +36,7 @@ export default function Productcard({ products }: ProductCardProps) {
                         },
                     }}
                 >
-                    <CardActionArea className="flex-1">
+                    <CardActionArea className="flex-1" onClick={() => navigate(`/product/${item.slug}`)}>
                         <div className="h-48 w-full overflow-hidden">
                             <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                         </div>
@@ -45,13 +49,13 @@ export default function Productcard({ products }: ProductCardProps) {
                             >
                                 {item.name}
                             </Typography>
-                            <Typography
+                            {/* <Typography
                                 variant="subtitle1"
                                 className="font-medium"
                                 sx={{ color: "#E6EDF3", fontWeight: 500 }}
                             >
                                 ₹{item.price}
-                            </Typography>
+                            </Typography> */}
                         </CardContent>
                     </CardActionArea>
                 </Card>

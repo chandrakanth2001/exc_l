@@ -23,10 +23,6 @@ export function EmblaCarousel() {
                 </div>
                 <div className="embla__slide">
                     <img src="https://i.postimg.cc/KckGqmw0/carousel-1.webp" alt="Slide 1" />
-                    <div className="embla__overlay">
-                        <h2>Test</h2>
-                        <p>Handpicked from trusted farms</p>
-                    </div>
                 </div>
             </div>
         </div>
