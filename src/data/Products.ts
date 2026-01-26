@@ -38,13 +38,13 @@ export const Products: Product[] = [
             {
                 id:500,
                 label:"500gm",
-                price:350,
+                price:190,
                 inStock:true
             },
             {
                 id:250,
                 label:"250gm",
-                price:180,
+                price:100,
                 inStock:true
             },
         ]
@@ -65,19 +65,46 @@ export const Products: Product[] = [
             {
                 id:500,
                 label:"500gm",
-                price:350,
+                price:180,
                 inStock:true
             },
             {
                 id:250,
                 label:"250gm",
-                price:180,
+                price:90,
                 inStock:true
             },
         ]
     },
     {
         id: 3,
+        name: "നെല്ലിക്ക അച്ചാർ",
+        slug: "nellika-achar",
+        price: 180,
+        currency: "INR",
+        image: "https://i.postimg.cc/SsdTZvhT/nellikka.webp",
+        category: "pickles",
+        rating: 4.5,
+        reviews: 128,
+        inStock: true,
+        badge: "Best Seller",
+        variants: [
+            {
+                id:500,
+                label:"500gm",
+                price:180,
+                inStock:true
+            },
+            {
+                id:250,
+                label:"250gm",
+                price:90,
+                inStock:true
+            },
+        ]
+    },
+    {
+        id: 4,
         name: "മല്ലി പൊടി",
         slug: "malli-podi",
         price: 70,
@@ -104,8 +131,8 @@ export const Products: Product[] = [
         ]
     },
     {
-        id: 4,
-        name: "മുളക് പൊടി",
+        id: 5,
+        name: "Kashmiri മുളക് പൊടി",
         slug: "mulaku-podi",
         price: 180,
         currency: "INR",
@@ -131,7 +158,7 @@ export const Products: Product[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         name: "മഞ്ഞൾ പൊടി",
         slug: "manjal-podi",
         price: 100,
@@ -158,7 +185,7 @@ export const Products: Product[] = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         name: "റാഗി പൊടി",
         slug: "ragi-podi",
         price: 60,
@@ -173,19 +200,13 @@ export const Products: Product[] = [
             {
                 id:500,
                 label:"500gm",
-                price:350,
-                inStock:true
-            },
-            {
-                id:250,
-                label:"250gm",
-                price:180,
+                price:60,
                 inStock:true
             },
         ]
     },
     {
-        id: 10,
+        id: 8,
         name: "പുട്ട് പൊടി",
         slug: "puttu-podi",
         price: 50,
@@ -199,13 +220,59 @@ export const Products: Product[] = [
             {
                 id:500,
                 label:"500gm",
-                price:350,
+                price:50,
+                inStock:true
+            },
+        ]
+    },
+    {
+        id: 9,
+        name: "Garam Masala",
+        slug: "garam-masala",
+        price: 50,
+        currency: "INR",
+        image: "https://i.postimg.cc/MTv7J6fc/garam-Masala.webp",
+        category: "powders",
+        rating: 4.4,
+        reviews: 152,
+        inStock: true,
+        variants: [
+            {
+                id:500,
+                label:"500gm",
+                price:400,
                 inStock:true
             },
             {
                 id:250,
                 label:"250gm",
-                price:180,
+                price:200,
+                inStock:true
+            },
+            {
+                id:100,
+                label:"100gm",
+                price:80,
+                inStock:true
+            },
+        ]
+    },
+    {
+        id: 10,
+        name: "ഇടിയപ്പ പൊടി",
+        slug: "idiyappa-podi",
+        price: 50,
+        currency: "INR",
+        image: "https://i.postimg.cc/MHcJBQMk/idiyappam.webp",
+        category: "powders",
+        rating: 4.4,
+        reviews: 152,
+        inStock: true,
+        variants: [
+            {
+                id:500,
+                label:"500gm",
+                price:50,
                 inStock:true
             },
         ]
@@ -223,15 +290,15 @@ export const Products: Product[] = [
         inStock: true,
         variants: [
             {
-                id:500,
-                label:"500gm",
-                price:350,
+                id:250,
+                label:"250gm",
+                price:200,
                 inStock:true
             },
             {
-                id:250,
-                label:"250gm",
-                price:180,
+                id:100,
+                label:"100gm",
+                price:80,
                 inStock:true
             },
         ]
